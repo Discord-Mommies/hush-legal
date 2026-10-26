@@ -41,4 +41,4 @@ If this policy changes, we'll update the date at the top. Big changes will be an
 
 ## Contact
 
-Questions or deletion requests: [SUPPORT SERVER LINK / EMAIL]
+Questions or deletion requests: join our [support server](https://discord.gg/xP4wHW5ypP) or email [hushbot.support@gmail.com](mailto:hushbot.support@gmail.com).

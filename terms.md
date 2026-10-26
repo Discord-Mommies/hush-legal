@@ -40,4 +40,4 @@ We may update these terms. If we do, we'll change the date at the top. Continuin
 
 ## Contact
 
-[SUPPORT SERVER LINK / EMAIL]
+Questions about these terms: join our [support server](https://discord.gg/xP4wHW5ypP) or email [hushbot.support@gmail.com](mailto:hushbot.support@gmail.com).

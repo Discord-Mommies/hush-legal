@@ -23,7 +23,7 @@ Nothing below is stored about you unless you run `/affection start` yourself.
 | The name you asked her to call you, and your choice of "good boy", "good girl" or neither | So she can say it |
 | Whether you turned on 18+ personal lines | So she only says them if you asked |
 | Your affection points and level, today's point counters, when you started, and when you last changed your name | To run the levels and the daily limits |
-| Audio recordings of her voice saying your chosen name, and lines that include it | So she can say them to you in voice |
+| Audio recordings of her voice saying lines that include your chosen name | So she can say them to you in voice |
 
 Points come from minutes you spend in a voice channel with the bot (while not deafened) and from using `/play` and `/praise`. We don't keep a log of when you were in voice, only the running totals.
 
@@ -48,7 +48,9 @@ To make her voice say your chosen name, the text of your name and of the lines t
 - **While the bot is in your server,** we keep your settings and clips so they keep working.
 - **When the bot is removed from your server,** all of that server's settings, clips and affection data are deleted automatically.
 - **Any server manager can delete everything at any time** with `/settings reset`, including everyone's affection data.
-- **You can delete your own affection data at any time** with `/affection stop`. That removes your level, your chosen name and every recording made for you on that server. Turning off 18+ personal lines with `/affection spicy` deletes the 18+ recordings made for you.
+- **You can delete your own affection data at any time** with `/affection stop`. That removes your level, your chosen name and your personal lines on that server. Turning off 18+ personal lines with `/affection spicy` removes your 18+ lines.
+- **Recordings are shared when the words are identical.** If someone else chose the same name and the same "good boy" / "good girl" / neither, the same line is recorded once and used for both of you. A recording contains only her voice saying the line, with nothing linking it to your Discord account. It's deleted as soon as no one's personal lines use it any more.
+- **After `/affection stop`,** the bot remembers for 24 hours, in memory only and never saved, that you stopped, so it can't be restarted over and over. That's forgotten when the 24 hours are up or the bot restarts.
 - **If you leave a server,** the bot can't see that, so your affection data on that server stays until you run `/affection stop` there, ask us to delete it, or the server removes the bot.
 
 ## Children

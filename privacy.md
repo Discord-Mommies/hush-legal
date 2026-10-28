@@ -1,6 +1,6 @@
 # Privacy Policy
 
-_Last updated: 28 October 2026_
+_Last updated: 29 October 2026_
 
 This policy explains what **Hush** ("the bot", "we") stores when you use it on Discord, and how to get it deleted.
 
@@ -27,6 +27,7 @@ Nothing below is stored about you unless you run `/affection start` yourself.
 | Your affection points and level, today's point counters, when you started, and when you last changed your name | To run the levels and the daily limits |
 | The last day and time you were in voice with her, and how many days in a row you've been there (your streak) | So she can celebrate streaks and say hello properly after a long time away |
 | Audio recordings of her voice saying lines that include your chosen name | So she can say them to you in voice |
+| Up to 15 short facts you told her about yourself in chat, like a game you play or a pet's name | So she remembers you in later conversations |
 
 Points come from minutes you spend in a voice channel with the bot (while not deafened) and from using `/play` and `/praise`. We don't keep a log of when you were in voice: only the running totals, the last time you were there, and your streak. Each new visit replaces the last one.
 
@@ -36,7 +37,8 @@ She only sees a chat message if it **mentions her, replies to her with the ping 
 
 - **To write her reply,** the message text (with mentions turned into names) is sent to the AI language model service the bot uses. So is what she knows about you: your display name, or if you opted in to affection levels your chosen name, pet word and level, and the game you're playing if game reactions are on. No Discord ID is sent.
 - **She also knows the server's affection leaderboard.** So her feelings match it, the model also gets the chosen name, display name, level and points of the top 5 members on that server's leaderboard, your own rank, and the rank of anyone you mention. These are the same things anyone can already see with `/affection leaderboard`. People who haven't run `/affection start` are never on it.
-- **We don't save messages or replies.** She keeps your last few exchanges in memory for up to 30 minutes so she can follow the conversation. They're never written to disk and are gone after a restart.
+- **We don't save messages or replies.** She keeps the last few exchanges in each channel (with anyone who talked to her there) in memory for up to 30 minutes, so she can follow the conversation and who said what. So someone who talks to her right after you may get a reply that refers to what you said. They're never written to disk and are gone after a restart.
+- **She may remember facts about you, only if you opted in to affection levels.** When you tell her something lasting about yourself, like a game you main or a pet's name, she may save it as a short note. She's told never to save anything sensitive (health, sexuality, religion, politics, where you live, work or study, contact details, money, or anything about other people), and anything that looks like a phone number, email or link is dropped. She keeps up to 15, the oldest forgotten first. These notes are sent to the AI service with your messages so she can bring them up. See them with `/affection memory` and delete one or all with `/affection forget`.
 - **If you're in her voice channel,** she may say her reply out loud. That reply text is sent to [ElevenLabs](https://elevenlabs.io/privacy-policy) to make the audio, and the audio file is deleted after 10 minutes.
 - **The AI service may handle what it receives under its own terms.** Some free tiers let the provider review requests to improve their service. Don't send her anything private.
 
@@ -65,7 +67,7 @@ To make her voice say your chosen name, the text of your name and of the lines t
 - **While the bot is in your server,** we keep your settings and clips so they keep working.
 - **When the bot is removed from your server,** all of that server's settings, clips and affection data are deleted automatically.
 - **Any server manager can delete everything at any time** with `/settings reset`, including everyone's affection data.
-- **You can delete your own affection data at any time** with `/affection stop`. That removes your level, your chosen name and your personal lines on that server. Turning off 18+ personal lines with `/affection spicy` removes your 18+ lines.
+- **You can delete your own affection data at any time** with `/affection stop`. That removes your level, your chosen name, what she remembers about you and your personal lines on that server. Turning off 18+ personal lines with `/affection spicy` removes your 18+ lines.
 - **Recordings are shared when the words are identical.** If someone else chose the same name and the same "good boy" / "good girl" / neither, the same line is recorded once and used for both of you. A recording contains only her voice saying the line, with nothing linking it to your Discord account. It's deleted as soon as no one's personal lines use it any more.
 - **After `/affection stop`,** the bot remembers for 24 hours, in memory only and never saved, that you stopped, so it can't be restarted over and over. That's forgotten when the 24 hours are up or the bot restarts.
 - **If you leave a server,** the bot can't see that, so your affection data on that server stays until you run `/affection stop` there, ask us to delete it, or the server removes the bot.

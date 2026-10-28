@@ -34,11 +34,11 @@ Points come from minutes you spend in a voice channel with the bot (while not de
 
 She only sees a chat message if it **mentions her, replies to her with the ping on, or is a DM to her**. Discord doesn't send the bot any other messages.
 
-- **To write her reply,** the message text (with mentions turned into names) is sent to the AI language model service the bot uses. So is what she knows about you: your display name, or if you opted in to affection levels your chosen name, pet word and level, and the game you're playing if game reactions are on. No Discord ID is sent.
+- **To write her reply,** the message text (with mentions turned into names) is sent to the AI language model service the bot uses, currently [Mistral AI](https://mistral.ai/terms). So is what she knows about you: your display name, or if you opted in to affection levels your chosen name, pet word and level, and the game you're playing if game reactions are on. No Discord ID is sent.
 - **She also knows the server's affection leaderboard.** So her feelings match it, the model also gets the chosen name, display name, level and points of the top 5 members on that server's leaderboard, your own rank, and the rank of anyone you mention. These are the same things anyone can already see with `/affection leaderboard`. People who haven't run `/affection start` are never on it.
 - **We don't save messages or replies.** She keeps your last few exchanges in memory for up to 30 minutes so she can follow the conversation. They're never written to disk and are gone after a restart.
 - **If you're in her voice channel,** she may say her reply out loud. That reply text is sent to [ElevenLabs](https://elevenlabs.io/privacy-policy) to make the audio, and the audio file is deleted after 10 minutes.
-- **The AI service may handle what it receives under its own terms.** Some free tiers let the provider review requests to improve their service. Don't send her anything private.
+- **The AI service may use what it receives to train its models.** We use Mistral AI's free plan, under which Mistral may use the messages it receives to train its models. Don't send her anything private.
 
 ### Game reactions
 

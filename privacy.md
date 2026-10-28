@@ -1,6 +1,6 @@
 # Privacy Policy
 
-_Last updated: 26 October 2026_
+_Last updated: 28 October 2026_
 
 This policy explains what **Hush** ("the bot", "we") stores when you use it on Discord, and how to get it deleted.
 
@@ -8,32 +8,57 @@ This policy explains what **Hush** ("the bot", "we") stores when you use it on D
 
 | Data | Why |
 |---|---|
-| Server ID and the server's bot settings (auto-join, interval, chosen voice channel, built-in and 18+ pack on/off) | So the bot behaves the way the server set it up |
+| Server ID and the server's bot settings (auto-join, interval, chosen voice channel, built-in and 18+ pack on/off, reactions on/off, and the server's timezone if a manager sets one) | So the bot behaves the way the server set it up |
 | Voice channel ID, if a server picks one in `/settings channel` | To know which channel to auto-join |
 | Audio clips uploaded with `/clips add`, their names, and the Discord user ID of the uploader | To play the clips, and to know who added them if there's a problem |
 | Whether each clip is in the random rotation | So random praise only uses the clips the server chose |
+| Whether someone used `/leave` (auto-join paused) | So she stays out until someone uses `/join`, even after a restart |
+| Daily counts per server of how often features are used (random praise, `/play`, `/praise`, uploads, opt-ins, level-ups), with no user IDs, kept for 90 days | To see which features people actually use |
+
+### If you opt in to affection levels
+
+Nothing below is stored about you unless you run `/affection start` yourself.
+
+| Data | Why |
+|---|---|
+| Your Discord user ID and the server ID | To keep your level separate on each server |
+| The name you asked her to call you, and your choice of "good boy", "good girl" or neither | So she can say it |
+| Whether you turned on 18+ personal lines | So she only says them if you asked |
+| Your affection points and level, today's point counters, when you started, and when you last changed your name | To run the levels and the daily limits |
+| The last day and time you were in voice with her, and how many days in a row you've been there (your streak) | So she can celebrate streaks and say hello properly after a long time away |
+| Audio recordings of her voice saying lines that include your chosen name | So she can say them to you in voice |
+
+Points come from minutes you spend in a voice channel with the bot (while not deafened) and from using `/play` and `/praise`. We don't keep a log of when you were in voice: only the running totals, the last time you were there, and your streak. Each new visit replaces the last one.
 
 ## What we don't store
 
 - **No message content.** The bot only uses slash commands and never reads chat messages.
 - **No voice recordings.** The bot joins voice deafened. It plays audio but never listens to or records anyone.
-- **No personal profiles.** We don't collect names, emails, IP addresses or activity history.
+- **No personal profiles.** We don't collect emails, IP addresses or activity history. The only name we store is the one you choose with `/affection start`.
 
 ## Who can see it
 
 Your server's data is only used by the bot inside your server. We don't sell or share it with anyone. Clips uploaded to one server are never shown to other servers.
 
-The bot runs on a cloud server we rent. Uploaded clips and settings are stored there.
+If you opt in to affection levels, other members of that server can see your level, rank and the name she calls you (with `/affection profile` and `/affection leaderboard`), and she says that name out loud in voice.
+
+The bot runs on a cloud server we rent. Uploaded clips, settings and affection data are stored there.
+
+To make her voice say your chosen name, the text of your name and of the lines that include it is sent to [ElevenLabs](https://elevenlabs.io/privacy-policy), the text-to-speech service we use. No Discord ID or other information about you is sent with it.
 
 ## How long we keep it
 
 - **While the bot is in your server,** we keep your settings and clips so they keep working.
-- **When the bot is removed from your server,** all of that server's settings and clips are deleted automatically.
-- **Any server manager can delete everything at any time** with `/settings reset`.
+- **When the bot is removed from your server,** all of that server's settings, clips and affection data are deleted automatically.
+- **Any server manager can delete everything at any time** with `/settings reset`, including everyone's affection data.
+- **You can delete your own affection data at any time** with `/affection stop`. That removes your level, your chosen name and your personal lines on that server. Turning off 18+ personal lines with `/affection spicy` removes your 18+ lines.
+- **Recordings are shared when the words are identical.** If someone else chose the same name and the same "good boy" / "good girl" / neither, the same line is recorded once and used for both of you. A recording contains only her voice saying the line, with nothing linking it to your Discord account. It's deleted as soon as no one's personal lines use it any more.
+- **After `/affection stop`,** the bot remembers for 24 hours, in memory only and never saved, that you stopped, so it can't be restarted over and over. That's forgotten when the 24 hours are up or the bot restarts.
+- **If you leave a server,** the bot can't see that, so your affection data on that server stays until you run `/affection stop` there, ask us to delete it, or the server removes the bot.
 
 ## Children
 
-The bot follows Discord's Terms of Service, which require users to be at least 13 (or older where local law requires). 18+ clips only play in voice channels a server has marked as age-restricted.
+The bot follows Discord's Terms of Service, which require users to be at least 13 (or older where local law requires). 18+ clips, and 18+ personal lines, only play in voice channels a server has marked as age-restricted. 18+ personal lines also need the person to turn them on themselves and confirm they're 18 or older.
 
 ## Changes
 

@@ -1,6 +1,6 @@
 # Terms of Service
 
-_Last updated: 26 October 2026_
+_Last updated: 28 October 2026_
 
 By adding **Hush** ("the bot") to a server or using its commands, you agree to these terms.
 
@@ -22,19 +22,25 @@ We may remove clips, or stop the bot from working in a server, if these rules ar
 
 The bot has an optional 18+ pack. It's off by default, a server manager has to turn it on, and those clips **only play in voice channels marked age-restricted**. Servers that enable it are responsible for keeping minors out of those channels.
 
-## 4. Fair use of the bot
+## 4. Affection levels
+
+Affection levels are opt-in. When you run `/affection start`, you choose what she calls you. Your name must not be offensive or hateful, and must not impersonate someone else; she says it out loud to everyone in the voice channel. We may reset a name or remove someone's affection data if this is broken.
+
+You can turn on 18+ personal lines with `/affection spicy`. By doing so you confirm you're 18 or older. Those lines only play in voice channels marked age-restricted, in servers that have turned on the 18+ pack.
+
+## 5. Fair use of the bot
 
 Don't try to break, overload, or abuse the bot (for example, spamming commands or using it to harass people). Cooldowns and limits exist to keep it working for everyone.
 
-## 5. No guarantees
+## 6. No guarantees
 
 The bot is provided "as is." We try to keep it online and working, but we can't promise it will always be available, and features may change.
 
-## 6. Liability
+## 7. Liability
 
 We aren't responsible for content uploaded by servers or users, or for any loss caused by using the bot, to the extent the law allows.
 
-## 7. Changes
+## 8. Changes
 
 We may update these terms. If we do, we'll change the date at the top. Continuing to use the bot means you accept the new terms.
 

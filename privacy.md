@@ -12,6 +12,8 @@ This policy explains what **Hush** ("the bot", "we") stores when you use it on D
 | Voice channel ID, if a server picks one in `/settings channel` | To know which channel to auto-join |
 | Audio clips uploaded with `/clips add`, their names, and the Discord user ID of the uploader | To play the clips, and to know who added them if there's a problem |
 | Whether each clip is in the random rotation | So random praise only uses the clips the server chose |
+| Whether someone used `/leave` (auto-join paused) | So she stays out until someone uses `/join`, even after a restart |
+| Daily counts per server of how often features are used (random praise, `/play`, `/praise`, uploads, opt-ins, level-ups), with no user IDs, kept for 90 days | To see which features people actually use |
 
 ### If you opt in to affection levels
 

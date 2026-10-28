@@ -8,7 +8,7 @@ This policy explains what **Hush** ("the bot", "we") stores when you use it on D
 
 | Data | Why |
 |---|---|
-| Server ID and the server's bot settings (auto-join, interval, chosen voice channel, built-in and 18+ pack on/off) | So the bot behaves the way the server set it up |
+| Server ID and the server's bot settings (auto-join, interval, chosen voice channel, built-in and 18+ pack on/off, reactions on/off, and the server's timezone if a manager sets one) | So the bot behaves the way the server set it up |
 | Voice channel ID, if a server picks one in `/settings channel` | To know which channel to auto-join |
 | Audio clips uploaded with `/clips add`, their names, and the Discord user ID of the uploader | To play the clips, and to know who added them if there's a problem |
 | Whether each clip is in the random rotation | So random praise only uses the clips the server chose |
@@ -25,9 +25,10 @@ Nothing below is stored about you unless you run `/affection start` yourself.
 | The name you asked her to call you, and your choice of "good boy", "good girl" or neither | So she can say it |
 | Whether you turned on 18+ personal lines | So she only says them if you asked |
 | Your affection points and level, today's point counters, when you started, and when you last changed your name | To run the levels and the daily limits |
+| The last day and time you were in voice with her, and how many days in a row you've been there (your streak) | So she can celebrate streaks and say hello properly after a long time away |
 | Audio recordings of her voice saying lines that include your chosen name | So she can say them to you in voice |
 
-Points come from minutes you spend in a voice channel with the bot (while not deafened) and from using `/play` and `/praise`. We don't keep a log of when you were in voice, only the running totals.
+Points come from minutes you spend in a voice channel with the bot (while not deafened) and from using `/play` and `/praise`. We don't keep a log of when you were in voice: only the running totals, the last time you were there, and your streak. Each new visit replaces the last one.
 
 ## What we don't store
 

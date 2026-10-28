@@ -13,7 +13,7 @@ This policy explains what **Hush** ("the bot", "we") stores when you use it on D
 | Audio clips uploaded with `/clips add`, their names, and the Discord user ID of the uploader | To play the clips, and to know who added them if there's a problem |
 | Whether each clip is in the random rotation | So random praise only uses the clips the server chose |
 | Whether someone used `/leave` (auto-join paused) | So she stays out until someone uses `/join`, even after a restart |
-| Daily counts per server of how often features are used (random praise, `/play`, `/praise`, uploads, opt-ins, level-ups), with no user IDs, kept for 90 days | To see which features people actually use |
+| Daily counts per server of how often features are used (random praise, `/play`, `/praise`, uploads, opt-ins, level-ups, reactions, chat replies), with no user IDs, kept for 90 days | To see which features people actually use |
 
 ### If you opt in to affection levels
 
@@ -30,11 +30,24 @@ Nothing below is stored about you unless you run `/affection start` yourself.
 
 Points come from minutes you spend in a voice channel with the bot (while not deafened) and from using `/play` and `/praise`. We don't keep a log of when you were in voice: only the running totals, the last time you were there, and your streak. Each new visit replaces the last one.
 
+### When you talk to her
+
+She only sees a chat message if it **mentions her, replies to her with the ping on, or is a DM to her**. Discord doesn't send the bot any other messages.
+
+- **To write her reply,** the message text (with mentions turned into names) is sent to the AI language model service the bot uses. So is what she knows about you: your display name, or if you opted in to affection levels your chosen name, pet word and level, and the game you're playing if game reactions are on. No Discord ID is sent.
+- **We don't save messages or replies.** She keeps your last few exchanges in memory for up to 30 minutes so she can follow the conversation. They're never written to disk and are gone after a restart.
+- **If you're in her voice channel,** she may say her reply out loud. That reply text is sent to [ElevenLabs](https://elevenlabs.io/privacy-policy) to make the audio, and the audio file is deleted after 10 minutes.
+- **The AI service may handle what it receives under its own terms.** Some free tiers let the provider review requests to improve their service. Don't send her anything private.
+
+### Game reactions
+
+If the bot owner turns this on, she can see the game that people **in her voice channel** are playing (the game's name and when you started), so she can react to it. Discord provides this. She uses it only in the moment and stores none of it.
+
 ## What we don't store
 
-- **No message content.** The bot only uses slash commands and never reads chat messages.
+- **No message content.** We don't save chat messages. She only ever sees messages that mention her, reply to her or DM her, and only to answer them (see above).
 - **No voice recordings.** The bot joins voice deafened. It plays audio but never listens to or records anyone.
-- **No personal profiles.** We don't collect emails, IP addresses or activity history. The only name we store is the one you choose with `/affection start`.
+- **No personal profiles.** We don't collect emails, IP addresses or activity history, and we don't keep the games you play. The only name we store is the one you choose with `/affection start`.
 
 ## Who can see it
 

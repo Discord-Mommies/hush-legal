@@ -28,19 +28,23 @@ Affection levels are opt-in. When you run `/affection start`, you choose what sh
 
 You can turn on 18+ personal lines with `/affection spicy`. By doing so you confirm you're 18 or older. Those lines only play in voice channels marked age-restricted, in servers that have turned on the 18+ pack.
 
-## 5. Fair use of the bot
+## 5. Talking to her
+
+Her chat replies are written by an AI model. They can be wrong, odd or out of character, and they aren't advice. Don't share private information with her. Don't try to make her say hateful, sexual (outside 18+ channels you opted into), or harmful things. We may limit or turn off chat for anyone who does.
+
+## 6. Fair use of the bot
 
 Don't try to break, overload, or abuse the bot (for example, spamming commands or using it to harass people). Cooldowns and limits exist to keep it working for everyone.
 
-## 6. No guarantees
+## 7. No guarantees
 
 The bot is provided "as is." We try to keep it online and working, but we can't promise it will always be available, and features may change.
 
-## 7. Liability
+## 8. Liability
 
 We aren't responsible for content uploaded by servers or users, or for any loss caused by using the bot, to the extent the law allows.
 
-## 8. Changes
+## 9. Changes
 
 We may update these terms. If we do, we'll change the date at the top. Continuing to use the bot means you accept the new terms.
 
